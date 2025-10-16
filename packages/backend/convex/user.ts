@@ -24,6 +24,8 @@ export const add = mutation({
         throw new Error("User does not belong to an organization");
     }
 
+    throw new Error("Tracking Test");
+    
         const userId = await ctx.db.insert("users", { name: "John Doe" });
         return userId
     },
